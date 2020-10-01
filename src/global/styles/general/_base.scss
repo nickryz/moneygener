@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: $mainFont;
+  font-size: 16px;
+  width: 100%;
+  overflow-x: hidden;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  // background: #fff;
+  color: $gray;
+  
+}
+
+.main {
+  // flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// ul {
+//   padding: 0;
+//   margin: 0;
+// }
+a {
+  color: rgb(102, 102, 255);
+  text-decoration: none;
+}
+.title {
+  &--lg {
+    margin: 0.5em 0;
+    font-size: 2rem;
+    @include sm {
+      font-size: 1.5rem;
+    }
+  }
+  &--md {
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+    @include sm {
+      font-size: 1.2rem;
+    }
+  }
+
+  
+  
+}
+
+.s-bold {
+  font-weight: 900;
+}
+
+.text {
+  &--md {
+    font-size: 1rem;
+    margin: 0.5em 0;
+  }
+}
+
+.my-container {
+  max-width: 1350px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+
+  @include xl {
+    // max-width: 997px;
+  }
+
+  @include lg {
+  }
+
+  @include md {
+    max-width: 100%;
+  }
+
+  @include sm {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+
+.space-between {
+  justify-content: space-between;
+}
+.v-expansion-panel-content__wrap {
+  padding: 24px !important;
+}
+.v-expansion-panel-header {
+  font-size: 1.5rem !important;
+  text-align: left;
+  font-weight: 700;
+  color: $lightGray;
+  transition: background-color 0.25s ease-in-out;
+
+  @include sm {
+    font-size: 1.2rem !important;
+  }
+}
+.list {
+  padding-left: 1.5em;
+}
+table {
+  width: 100%;
+}
